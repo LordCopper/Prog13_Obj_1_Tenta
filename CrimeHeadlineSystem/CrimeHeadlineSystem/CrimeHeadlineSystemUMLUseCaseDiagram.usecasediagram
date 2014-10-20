@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="ab64df79-1b3e-4512-813d-062aaa5038a2" name="CrimeHeadlineSystemUMLUseCaseDiagram" linkedPackageId="0f3c1a39-7a4e-4fc4-8f74-4276edb67650" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="9f9ec7b3-5408-4f7f-b383-cfae3085e679">
+      <profileInstance Id="2ebdb358-0ec5-4ad3-9a1a-40e9dc9228b0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="98e62752-d060-4859-ab77-f6baabb9c4f3">
+      <profileInstance Id="79e7dcc4-ae43-4f70-aadf-3b309003763f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="082f8c7c-1ffb-4129-8936-20bc4a6c4538" name="CrimeHeadlineSystem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2752b974-a998-45c7-896a-f3dac32ff737" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9e2dffa6-db01-4138-9f7c-464cdedd269b" name="Criminal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d3a361e4-dd31-4806-b091-8c910f9fc727" />
+        <targetEnds>
+          <association Id="a3709d99-377f-4611-9a15-b7689fb51cf8" isDerived="false" sourceEndRoleName="Criminal" targetEndRoleName="Read top crimes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2355f59d-fd1a-42da-a49d-292cf371db74" LastKnownName="Read top crimes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30eb5205-9da2-438a-ac86-d2c8a4f12098" name="Criminal" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a39bbfb6-6a05-40fb-a6ba-fa171cffc08a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="589e3808-32a0-4b25-b62d-0835b4bc1401" name="Read top crimes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0c08223d-44c7-45a9-bb66-863cfa0b3a10" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0b5fb5db-86ee-4806-bab2-a6b5bd1b7693" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="2355f59d-fd1a-42da-a49d-292cf371db74" name="Read top crimes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="de1ff215-a23d-48d9-b6ff-ad34a75478b3" />
+        <subjects>
+          <subsystemMoniker Id="082f8c7c-1ffb-4129-8936-20bc4a6c4538" LastKnownName="CrimeHeadlineSystem" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="0f3c1a39-7a4e-4fc4-8f74-4276edb67650" name="CrimeHeadlineSystem">
+    <elementDefinition Id="96239ba2-1310-4212-9b09-02d19a7b29ba" />
+  </package>
+</useCaseModelRoot>
